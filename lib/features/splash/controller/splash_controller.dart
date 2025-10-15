@@ -16,5 +16,6 @@ class SplashController {
     if (context.mounted) {
       context.go("/onboarding");
     }
+
   }
 }
