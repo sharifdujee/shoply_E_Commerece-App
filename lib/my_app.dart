@@ -17,6 +17,7 @@ class MyApp extends ConsumerWidget {
     return ScreenUtilInit(
       designSize: const Size(375, 812),
       child: MaterialApp.router(
+        title: "Shoply",
         routerConfig: router,
         debugShowCheckedModeBanner: false,
       ),
