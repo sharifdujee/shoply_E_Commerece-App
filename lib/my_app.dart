@@ -20,6 +20,7 @@ class MyApp extends ConsumerWidget {
         title: "Shoply",
         routerConfig: router,
         debugShowCheckedModeBanner: false,
+
       ),
     );
   }
