@@ -1,5 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:shoply_app/features/authentication/presentation/screen/sign_in_screen.dart';
 import 'package:shoply_app/features/onboarding/presentation/screen/onboarding_screen.dart';
 import 'package:shoply_app/features/splash/presentation/screen/splash_screen.dart';
 
@@ -8,7 +9,12 @@ final goRouterProvider = Provider<GoRouter>((ref){
     GoRoute(path: "/",
         builder: (context, state)=>const SplashScreen()),
     GoRoute(path: "/onboarding",
-    builder: (context, state)=>OnboardingScreen())
+    builder: (context, state)=>OnboardingScreen()),
+
+    GoRoute(path: "/signIn",
+      builder: (context, state)=>SignInScreen()
+    )
+
 
   ]);
 

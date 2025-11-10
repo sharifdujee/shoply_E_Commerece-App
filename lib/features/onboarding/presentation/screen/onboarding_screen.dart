@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/legacy.dart' show StateProvider;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 import 'package:shoply_app/core/constants/image_path.dart';
 import 'package:shoply_app/core/utils/app_text.dart';
 
@@ -95,8 +96,11 @@ class OnboardingScreen extends ConsumerWidget {
                           duration: const Duration(milliseconds: 300),
                           curve: Curves.easeInOut,
                         );
-                      } else {
+
+                      } else if(currentPage ==3) {
+                        context.go("/signIn");
                         // Navigate to home or main app
+
                         ScaffoldMessenger.of(context).showSnackBar(
                            SnackBar(
                             content: CustomText(text:'Welcome to Funica!'),

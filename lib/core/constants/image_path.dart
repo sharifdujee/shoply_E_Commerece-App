@@ -4,4 +4,5 @@ class ImagePath{
   static const String onBoardingTwo = "$_basePath/onboarding_two.png";
   static const String onBoardingThree = "$_basePath/onboarding_three.png";
   static const String onBoardingFour = "$_basePath/onboarding_four.png";
+  static const String signIn = "$_basePath/signIn.png";
 }
